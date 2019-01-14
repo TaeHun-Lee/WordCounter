@@ -1,0 +1,15 @@
+<h1>The Text that you submitted is consisted of {{total_len}} words </h1>
+
+<a href="{% url 'home' %}">Try Again</a>
+<br>
+
+<h2>The Text that you submitted : </h2>
+{{ full }}
+
+<h2>Words Counted : </h2>
+{% for i, j in pairs %}
+
+{{ i }} : {{ j }}
+<br>
+
+{% endfor %}
