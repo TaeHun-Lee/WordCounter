@@ -1,0 +1,29 @@
+@font-face { font-family: 'NIXGONM-Vb'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+html, body { margin: 0; padding: 0; }
+
+html a, body a { text-decoration: none; color: black; }
+
+html a:visited, body a:visited { text-decoration: none; }
+
+html a:hover, body a:hover { text-decoration: none; }
+
+html a:focus, body a:focus { text-decoration: none; }
+
+html a:hover, html a:active, body a:hover, body a:active { text-decoration: none; }
+
+.container { display: flex; justify-content: center; align-items: center; align-content: center; flex-wrap: wrap; text-align: center; }
+
+.container .content { flex: 1 1 auto; margin-left: 5vw; margin-right: 5vw; padding: 30px; text-align: center; text-transform: uppercase; transition: 0.5s; background-size: 200% auto; color: white; box-shadow: 0 0 20px #eee; border-radius: 10px; position: relative; display: inline-block; top: 15vh; background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%); }
+
+.container .content:hover { background-position: right center; }
+
+.container .content a { display: inline-block; position: relative; font-size: 2vh; margin-bottom: 5vh; }
+
+.container .content h1 { font-family: 'NIXGONM-Vb'; font-size: 5vw; color: white; display: inline-block; position: relative; margin-top: 20px; animation: emerge 2.5s ease-in-out; }
+
+@keyframes emerge { from { opacity: 0;
+    bottom: -10px; }
+  to { bottom: 0; } }
+
+/*# sourceMappingURL=home.css.map */

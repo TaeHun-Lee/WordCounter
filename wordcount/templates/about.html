@@ -1,5 +1,11 @@
-<h1>About this App</h1>
 
-<p>This page is for description of this app</p>
+{% extends "base.html" %}
 
-<a href="{% url 'home' %}">Go Back to Home</a>
+{% block title %}WordCount's About{% endblock %}
+{% block content %}
+    <h1>About this App</h1>
+    <br>
+    <a href="{% url 'home' %}">Go Back to Home</a>
+
+    <p>This page is for description of this app</p>
+{% endblock %}

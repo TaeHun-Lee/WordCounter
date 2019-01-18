@@ -1,9 +1,14 @@
-<h1>WordCount App's Home</h1>
+{% extends "base.html" %}
 
-<a href="{% url 'about' %}">ABOUT</a>
-
-<form action="{% url 'result' %}">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
+{% block title %}WordCount's Home{% endblock %}
+{% block content %}
+    <h1>WordCount App's Home</h1>
     <br>
-    <input type="submit" value="Count">
-</form>
+    <a href="{% url 'about' %}">ABOUT</a>
+
+    <form action="{% url 'result' %}">
+        <textarea cols="80" rows="5" name="fulltext"></textarea>
+        <br>
+        <button type="submit"><span>COUNT</span></button>
+    </form>
+{% endblock %}

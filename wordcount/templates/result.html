@@ -1,15 +1,20 @@
-<h1>The Text that you submitted is consisted of {{total_len}} words </h1>
+{% extends "base.html" %}
 
-<a href="{% url 'home' %}">Try Again</a>
-<br>
+{% block title %}WordCount's Result{% endblock %}
+{% block content %}
+    <h1>The Text that you submitted is consisted of {{total_len}} words </h1>
+    <br>
+    <a href="{% url 'home' %}">Try Again</a>
 
-<h2>The Text that you submitted : </h2>
-{{ full }}
+    <h2>The Text that you submitted : </h2>
+    <p> {{ full }} </p>
 
-<h2>Words Counted : </h2>
-{% for i, j in pairs %}
+    <h2>Words Counted : </h2>
+    <p> {% for i, j in pairs %}
 
-{{ i }} : {{ j }}
-<br>
+    {{ i }} : {{ j }}
+    <br>
 
-{% endfor %}
+    {% endfor %}
+    </p>
+{% endblock %}
