@@ -15,7 +15,7 @@ html a:hover, html a:active, body a:hover, body a:active { text-decoration: none
 
 .container { display: flex; justify-content: center; align-items: center; align-content: center; flex-wrap: wrap; text-align: center; }
 
-.container .content { flex: 1 1 auto; margin-left: 5vw; margin-right: 5vw; padding: 30px; text-align: center; text-transform: uppercase; transition: 0.5s; background-size: 200% auto; color: white; box-shadow: 0 0 20px #eee; border-radius: 10px; position: relative; display: inline-block; top: 10vh; background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%); }
+.container .content { flex: 1 1 auto; margin-left: 5vw; margin-right: 5vw; margin-bottom: 5vh; padding: 30px; text-align: center; text-transform: uppercase; transition: 0.5s; background-size: 200% auto; color: white; box-shadow: 0 0 20px #eee; border-radius: 10px; position: relative; display: inline-block; top: 5vh; background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%); }
 
 .container .content:hover { background-position: right center; }
 
